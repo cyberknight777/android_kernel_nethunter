@@ -8,6 +8,7 @@
 - [[#about][About]]
 - [[#usage][Usage]]
 - [[#supported option][Supported Options]]
+- [[#credits][Credits]]
 :END:
 
 * About
@@ -41,3 +42,7 @@ source "nethunter/Kconfig"
 + =WiFi drivers support= [ note only ath9k, mt7601, ralink, realtek and zydas will be enabled ]
   
 Once that's done feel free to compile and use your kernel which has nethunter support now :)
+
+* Credits
+
+** [[https://kali.org][kali.org]] for their documentation on configuring the kernel for nethunter support.
