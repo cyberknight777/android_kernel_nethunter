@@ -96,7 +96,7 @@ config NETHUNTER_SDR_SUPPORT
 
 	help
 
-		Enable SDR support.
+		Enable SDR drivers support like airspy, hackrf  and msi2500.
 
 	select MEDIA_SUPPORT
 
@@ -316,7 +316,7 @@ config NETHUNTER_USB_SUPPORT
 
 	help
 
-		Enable USB support for nethunter usage.
+		Enable USB support for nethunter usage like otg access, mtp, rndis and eem.
 
 	select USB_OTG
 
