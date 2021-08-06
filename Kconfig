@@ -1,4 +1,4 @@
-menu "Nethunter Support"
+menu "NetHunter Support"
 
 config NETHUNTER_SUPPORT
 
@@ -330,6 +330,16 @@ config NETHUNTER_USB_SUPPORT
 
 	select USB_STORAGE
 
+	select USB_SERIAL
+
+	select USB_SERIAL_CH341
+
+	select USB_SERIAL_CP210X
+
+	select USB_SERIAL_FTDI_SIO
+
+	select USB_SERIAL_PL2303
+
 	select USB_GADGET
 
 	select USB_CONFIGFS_SERIAL
@@ -370,6 +380,14 @@ config NETHUNTER_WIFI_DRIVERS_SUPPORT
 	select ATH6KL
 
 	select ATH6KL_USB
+
+	select HOSTAP
+
+	select HOSTAP_PLX
+
+	select HOSTAP_PCI
+
+	select HOSTAP_FIRMWARE
 
 	select WLAN_VENDOR_MEDIATEK
 
