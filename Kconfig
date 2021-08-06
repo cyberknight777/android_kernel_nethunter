@@ -1,4 +1,4 @@
-menu "Nethunter Support"
+menu "NetHunter Support"
 
 config NETHUNTER_SUPPORT
 
@@ -329,6 +329,16 @@ config NETHUNTER_USB_SUPPORT
 	select USB_ACM
 
 	select USB_STORAGE
+
+	select USB_SERIAL
+
+	select USB_SERIAL_CH341
+
+	select USB_SERIAL_CP210X
+
+	select USB_SERIAL_FTDI_SIO
+
+	select USB_SERIAL_PL2303
 
 	select USB_GADGET
 
