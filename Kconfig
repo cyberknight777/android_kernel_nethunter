@@ -16,8 +16,6 @@ config NETHUNTER_SUPPORT
 
 	select MODULE_UNLOAD
 
-	select MODULE_FORCE_UNLOAD
-
 	select MODVERSIONS
 
 	select BT
