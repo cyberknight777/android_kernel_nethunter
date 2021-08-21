@@ -102,6 +102,8 @@ config NETHUNTER_SDR_SUPPORT
 
 	select MEDIA_SDR_SUPPORT
 
+	select MEDIA_USB_SUPPORT
+
 	select USB_AIRSPY
 
 	select USB_HACKRF
