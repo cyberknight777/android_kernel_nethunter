@@ -22,7 +22,10 @@ You would need the appropriate patches for nethunter in which you will find them
 ** You can add this to your tree by doing this command
 
 #+BEGIN_SRC shell
-git subtree add --prefix=nethunter https://github.com/cyberknight777/android_kernel_nethunter main
+git fetch https://github.com/cyberknight777/android_kernel_nethunter main
+git merge -s ours --no-commit --allow-unrelated-histories --squash FETCH_HEAD
+git read-tree --prefix=nethunter -u FETCH_HEAD
+git commit -m "Imported nethunter/ from https://github.com/cyberknight777/android_kernel_nethunter"
 #+END_SRC
 
 ** Then go to arch/yourtargetarchitecture/Kconfig and add this line below:
