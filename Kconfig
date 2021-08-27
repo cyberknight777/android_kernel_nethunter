@@ -44,11 +44,15 @@ config NETHUNTER_SUPPORT
 
 	select BT_HCIBTUSB
 
+	select BT_HCIBTSDIO
+
 	select BT_HCIBTUSB_BCM
 
 	select BT_HCIBTUSB_RTL
 
 	select BT_HCIUART
+
+	select BT_HCIVHCI
 
 	select BT_HCIBCM203X
 
