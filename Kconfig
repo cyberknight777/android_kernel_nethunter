@@ -6,6 +6,8 @@ config NETHUNTER_SUPPORT
 
 	default n
 
+	depends on !ANDROID_BINDERFS
+
 	help
 
 		Enable basic nethunter support in-kernel which are sysvipc, module support, hci0 support and mac80211 support.
