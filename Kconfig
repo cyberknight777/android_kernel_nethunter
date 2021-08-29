@@ -20,6 +20,8 @@ config NETHUNTER_SUPPORT
 
 	select MODVERSIONS
 
+	select MMC
+
 	select BT
 
 	select BT_BREDR
