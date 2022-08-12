@@ -34,10 +34,6 @@ git commit -m "Imported nethunter/ from https://github.com/cyberknight777/androi
 source "nethunter/Kconfig"
 #+END_SRC
 
-** Disable this config in menuconfig
-
-=CONFIG_ANDROID_BINDERFS=
-
 ** Next you need to enable Basic Nethunter Support option, while the others are purely optional.
 
 * Supported Options
