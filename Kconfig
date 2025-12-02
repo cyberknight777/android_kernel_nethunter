@@ -435,5 +435,77 @@ config NETHUNTER_WIFI_DRIVERS_SUPPORT
 
 	select USB_NET_RNDIS_WLAN
 
+config NETHUNTER_CAN_SUBSYSTEM_SUPPORT
+
+	tristate "CAN subsystem support"
+
+	default y if NETHUNTER_SUPPORT
+
+	depends on NETHUNTER_SUPPORT
+
+	help
+		
+		Enable Controller Area Network support and drivers for use with CARsenal.
+
+	select	CAN
+
+	select 	CAN_RAW
+
+	select	CAN_BCM
+
+	select	CAN_GW
+
+	select	CAN_VCAN
+
+	select	CAN_SLCAN && m
+
+	select	CAN_DEV
+
+	select	CAN_LEDS
+
+	imply	CAN_GRCAN
+
+	imply	CAN_XILINXCAN
+
+	imply	CAN_C_CAN
+
+	imply	CAN_CC770
+
+	imply	CAN_IFI_CANFD
+
+	imply	CAN_M_CAN
+
+	imply	CAN_SJA1000
+
+	imply	CAN_SOFTING
+
+	select	CAN_HI311X
+
+	select	CAN_MCP251X
+
+	select	CONFIG_CAN_EMS_USB
+
+	select	CAN_ESD_USB2
+
+	select	CAN_GS_USB
+
+	select	CONFIG_CAN_KVASER_USB
+
+	select	CAN_PEAK_USB
+
+	select	CAN_8DEV_USB
+
+	select	CAN_MCBA_USB
+
+	select	NETLINK_DIAG
+
+	select	VSOCKETS
+
+	select	NET_EMATCH_CANID
+
+	select	USB_SERIAL_CONSOLE
+
+	select	USB_SERIAL_GENERIC
+	
 endmenu
 
