@@ -16,6 +16,8 @@ config NETHUNTER_SUPPORT
 
 	select MODULE_UNLOAD
 
+	select MODULE_FORCE_UNLOAD
+
 	select MODVERSIONS
 
 	select MMC
@@ -356,6 +358,8 @@ config NETHUNTER_USB_SUPPORT
 
 	select USB_CONFIGFS_NCM
 
+	select USB_CONFIGFS_ECM
+
 	select USB_CONFIGFS_ECM_SUBSET
 
 	select USB_CONFIGFS_RNDIS
@@ -457,7 +461,7 @@ config NETHUNTER_CAN_SUBSYSTEM_SUPPORT
 
 	select	CAN_VCAN
 
-	select	CAN_SLCAN && m
+	select	CAN_SLCAN if m
 
 	select	CAN_DEV
 
